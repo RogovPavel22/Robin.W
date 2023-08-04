@@ -373,9 +373,7 @@ grid-area: skillset;
 /* -------LOGOTIPS-------- */
 
 .logotips {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    padding: 0 51px;
 }
 
 .logotips__wrapper {
@@ -385,8 +383,11 @@ grid-area: skillset;
 
 .logotips img {
     width: 85px;
-    height: 30px;
-    
+    height: 30px;  
+}
+
+.logotips-mobile {
+    display: none;
 }
 
 /* -------PROJECT-------- */
@@ -966,6 +967,26 @@ label {
     .footer__copyright {
         max-width: 329px;
     }
+
+    .logotips-desk {
+        display: none;
+    }
+
+    .logotips-mobile {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    .logotips__wrapper {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 140px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -1214,10 +1235,6 @@ label {
 
     .project__card-img {
         height: 400px
-    }
-
-    .logotips__wrapper {
-        padding: 55px 100px;
     }
 
     .start {

@@ -71,3 +71,30 @@ tabsBtn.forEach((btn, index) => btn.addEventListener("click", () => {
     hideTabs();
     showTab(index);
 }));
+
+// SWIPER
+
+new Swiper (".swiper", {
+    slidesPerView: 4,
+    watchOverflow: true,
+    initialSlide: 0,
+    mousewheel: {
+        sensitivity: 1,
+    },
+    freeMode: true,
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        800: {
+            slidesPerView: 2,
+        },
+        1000: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    }
+});
